@@ -1,4 +1,4 @@
-body {font-size:18px; font-family: Verdana, Geneva, sans-serif; background: url('images/background.png'); background-size: cover;}
+body {font-size:18px; font-family: Verdana, Geneva, sans-serif; background: url('images/background.png'); background-size: cover; color:white}
 
 #body-wrapper {width:1200px; margin: auto auto;}
 
@@ -32,4 +32,8 @@ a {
 a:hover {
 	background: url('images/buttonHover.png');
 	background-size: cover;
+}
+
+h1 {
+	color:white
 }
