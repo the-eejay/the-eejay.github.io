@@ -2,7 +2,10 @@
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" type="text/css" href="Website/style/style.css"><script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+	<title>SpaceCOG - A retro space game</title>
+	<link rel="stylesheet" type="text/css" href="Website/style/style.css">
+	<script src="Website/scripts/drop-down-menu.js"></script>
+	<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
 		<script type="text/javascript">
 		<!--
 		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
@@ -67,9 +70,18 @@
 				<img src="Website/images/logo.png" alt="spacecog logo" height="80px;"/>
 				<div id="nav-bar">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">News</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a class="current-page" href="index.html">Home</a></li>
+						<li><a href="essay.html">Evaluation</a></li>
+						<li><a href="#"
+							onmouseover="mopen('m1')" 
+							onmouseout="mclosetime()">Testing</a>
+							<div id="m1" 
+								onmouseover="mcancelclosetime()" 
+								onmouseout="mclosetime()">
+							<a href="#">User Testing</a>
+							<a href="#">Functional Testing</a>
+							</div>
+						</li>
 						<li><a href="#">About</a></li>
 					</ul>
 				</div>
@@ -78,11 +90,11 @@
 				<p class="download">
 					<p class="content">Unfortunately, Unity's latest web player update caused the in-browser game to break! To play, click on the relevant download button below:</p>
 					<h1>Windows</h1>
-					<a href="SpaceCOG Win.zip" title="SpaceCOG for Windows">Download</a>
+					<a class="button" href="SpaceCOG Win.zip" title="SpaceCOG for Windows">Download</a>
 					<h1>Mac</h1>
-					<a href="SpaceCOG Mac.app.zip" title="SpaceCOG for Mac">Download</a>
+					<a class="button" href="SpaceCOG Mac.app.zip" title="SpaceCOG for Mac">Download</a>
 					<h1>Linux</h1>
-					<a href="SpaceCOG Linux.zip" title="SpaceCOG for Linux">Download</a>
+					<a class="button" href="SpaceCOG Linux.zip" title="SpaceCOG for Linux">Download</a>
 				</p>
 			</div>
 			<p>A/D to choose ship

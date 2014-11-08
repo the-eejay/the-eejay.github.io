@@ -1,8 +1,8 @@
-body {font-size:18px; font-family: Verdana, Geneva, sans-serif; background: url('images/background.png'); background-size: cover; color:white}
+body {font-size:18px; font-family: Verdana, Geneva, sans-serif; background: url('images/background.png'); color:white}
 
 #body-wrapper {width:1200px; margin: auto auto;}
 
-ul {
+#nav-bar ul, .title {
     list-style-type: none; 
 	background-color:rgba(24, 30, 37, 0.4);
 	border-top-style: solid;
@@ -14,11 +14,11 @@ ul {
 	height:45px;
 }
 
-li {
+#nav-bar li {
     float: left;
 }
 
-a {
+#nav-bar li a, .button {
     display: block;
     width: 120px;
 	text-decoration:none;
@@ -29,11 +29,70 @@ a {
 	background-size: cover;
 	text-align:center;
 }
-a:hover {
+#nav-bar li a:hover, .button:hover{
 	background: url('images/buttonHover.png');
 	background-size: cover;
+}
+
+#nav-bar ul div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+	#nav-bar ul div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #EAEBD8;
+		color: #2875DE;
+		font: 13px}
+
+	#nav-bar ul div a:hover
+	{	background: #49A3FF;
+		color: #FFF}
+
+.current-page {
+	background: url('images/buttonHover.png') !important;
+	background-size: cover !important;
 }
 
 h1 {
 	color:white
 }
+
+.column {
+	float:left;
+	min-height:1px;
+	position:relative;
+	margin-bottom:40px;
+}
+
+.one-quarter {
+	width:25%;
+}
+.three-quarter{
+	width:75%; 
+}
+
+.clear {
+  clear:both;
+  display:block;
+  height:0;
+  line-height:0;
+  visibility:hidden;
+  zoom:1;
+}
+
+.team-name {
+	margin-top:0px;
+}
+
+.title{padding-top:15px;}
