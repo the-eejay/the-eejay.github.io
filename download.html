@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="Website/style/style.css">
+	<script src="Website/scripts/drop-down-menu.js"></script>
+	<title>Download</title>
+	</head>
+
+	<body>
+		<div id="body-wrapper">
+			<div id="header">
+				<img src="Website/images/logo.png" alt="spacecog logo" height="80px;"/>
+				<div id="nav-bar">
+					<ul>
+						<li><a href="http://the-eejay.github.io/">Home</a></li>
+						<li><a href="essay.html">Evaluation</a></li>
+						<li><a href="#"
+							onmouseover="mopen('m1')" 
+							onmouseout="mclosetime()">Testing</a>
+							<div id="m1" 
+								onmouseover="mcancelclosetime()" 
+								onmouseout="mclosetime()">
+							<a href="#">User Testing</a>
+							<a href="functional.html">Functional Testing</a>
+							</div>
+						</li>
+						<li><a href="guides.html">Guides</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="media.html">Media</a></li>
+						<li><a class="current-page" href="download.html">Downloads</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<p class="content">Unfortunately, Unity's latest web player update caused the in-browser game to break! To play, click on the relevant download button below:</p>
+				<h3 class="title">Downloads</h3>
+				<div class="one-third column">
+					<center><h1>Windows</h1></center>
+					<center><a class="button" href="SpaceCOG Win.zip" title="SpaceCOG for Windows">Download</a></center>
+					<center><p>.zip (10.4MB)</p></center>
+				</div>
+				<div class="one-third column">
+					<center><h1>Mac</h1></center>
+					<center><a class="button" href="SpaceCOG Mac.app.zip" title="SpaceCOG for Mac">Download</a></center>
+					<center><p>.zip (11.9MB)</p></center>
+				</div>
+				<div class="one-third column">
+					<center><h1>Linux</h1></center>
+					<center><a class="button" href="SpaceCOG Linux.zip" title="SpaceCOG for Linux">Download</a></center>
+					<center><p>.zip (12.8MB)</p></center>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

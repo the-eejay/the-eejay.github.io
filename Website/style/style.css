@@ -78,6 +78,11 @@ h1 {
 .one-quarter {
 	width:25%;
 }
+
+.one-third {
+	width:33.3%;
+}
+
 .three-quarter{
 	width:75%; 
 }
