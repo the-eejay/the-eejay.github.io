@@ -107,3 +107,9 @@ h1 {
 .pass {color:green;}
 
 .fail {color:orange;}
+
+td, th {padding:5px;}
+
+.user-rating {text-align:center; margin:auto auto;}
+
+.users {margin:auto auto;}
